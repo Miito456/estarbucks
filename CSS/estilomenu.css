@@ -1,0 +1,577 @@
+/*Diego Ponce de León No.Lista. 30*/
+/*Miguel Angel Ramos Soto No.Lista. 33*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+ a{
+    text-decoration: none;
+    color:#017143;
+}
+section{
+	position:relative;
+	width: 100%;
+	min-height: 100vh;
+	padding: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #fff;
+}
+header{
+	position:absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	padding: 20px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+header  .logo{
+	position: relative;
+	max-width: 80px;
+}
+header ul{
+	position:relative;
+	display: flex;
+}
+header ul li{
+	list-style: none;
+}
+header ul li a{
+	display: inline-block;
+	color:#333;
+	font-weight: 400;
+	margin-left: 40px;
+	text-decoration: none;
+}
+header nav a:hover,
+header .activo{
+	color:#017143;
+}
+h1{
+	text-align: center;
+	font-size: 64px;
+}
+.items{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 50vh;
+}
+.items2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 50vh;
+}
+.card{
+	position:relative;
+	width: 600px;
+	height: 350px;
+	border-radius: 20px;
+	display: flex;
+	align-items: center;
+	border-radius: 20px;
+	transition: 0.5s;
+}
+.card .circulo{
+	position:absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+	overflow: hidden;
+}
+.card .circulo::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #017143;
+	clip-path: circle(120px at center);
+	transition: 0.5s;
+}
+.card:hover .circulo:before{
+	background: #E4CFB1;
+	clip-path: circle(400px at center);
+}
+.card img{
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	height: 300px;
+	pointer-events: none;
+	transition: 0.5s;
+}
+.card:hover img{
+	left:72%;
+	height: 420px;
+}
+.card .content{
+	position:relative;
+	width: 50%;
+	left:20%;
+	padding: 20px 20px 20px 40px;
+	transition:0.5s;
+	opacity: 0;
+	visibility: hidden;
+}
+.card:hover .content{
+	left: 0;
+	opacity: 1;
+	visibility: visible;
+}
+.card .content h2{
+	color:#FFF;
+	text-transform: uppercase;
+	font-size: 2em;
+	line-height: 1em;
+	margin-bottom: 5px;
+}
+.card .content p{
+	color:#FFf;
+}
+.card .content a{
+	position:relative;
+	color:#fff;
+	padding: 10px 20px;
+	border-radius: 10px;
+	background:#FFf;
+	color:#111;
+	margin-top: 10px;
+	display: inline-block;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+
+
+.card2{
+	position:relative;
+	width: 600px;
+	height: 350px;
+	border-radius: 20px;
+	display: flex;
+	align-items: center;
+	border-radius: 20px;
+	transition: 0.5s;
+}
+.card2 .circulo2{
+	position:absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+	overflow: hidden;
+}
+.card2 .circulo2::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #eb7495;
+	clip-path: circle(120px at center);
+	transition: 0.5s;
+}
+.card2:hover .circulo2:before{
+	background: #E4CFB1;
+	clip-path: circle(400px at center);
+}
+.card2 img{
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	height: 300px;
+	pointer-events: none;
+	transition: 0.5s;
+}
+.card2:hover img{
+	left:72%;
+	height: 420px;
+}
+.card2 .content2{
+	position:relative;
+	width: 50%;
+	left:20%;
+	padding: 20px 20px 20px 40px;
+	transition:0.5s;
+	opacity: 0;
+	visibility: hidden;
+}
+.card2:hover .content2{
+	left: 0;
+	opacity: 1;
+	visibility: visible;
+}
+.card2 .content2 h2{
+	color:#FFF;
+	text-transform: uppercase;
+	font-size: 2em;
+	line-height: 1em;
+	margin-bottom: 5px;
+}
+.card2 .content2 p{
+	color:#FFf;
+}
+.card2 .content2 a{
+	position:relative;
+	color:#fff;
+	padding: 10px 20px;
+	border-radius: 10px;
+	background:#FFf;
+	color:#111;
+	margin-top: 10px;
+	display: inline-block;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+
+
+.card3{
+	position:relative;
+	width: 600px;
+	height: 350px;
+	border-radius: 20px;
+	display: flex;
+	align-items: center;
+	border-radius: 20px;
+	transition: 0.5s;
+}
+.card3 .circulo3{
+	position:absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+	overflow: hidden;
+}
+.card3 .circulo3::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #d752b1;
+	clip-path: circle(120px at center);
+	transition: 0.5s;
+}
+.card3:hover .circulo3:before{
+	background: #E4CFB1;
+	clip-path: circle(400px at center);
+}
+.card3 img{
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	height: 300px;
+	pointer-events: none;
+	transition: 0.5s;
+}
+.card3:hover img{
+	left:72%;
+	height: 420px;
+}
+.card3 .content3{
+	position:relative;
+	width: 50%;
+	left:20%;
+	padding: 20px 20px 20px 40px;
+	transition:0.5s;
+	opacity: 0;
+	visibility: hidden;
+}
+.card3:hover .content3{
+	left: 0;
+	opacity: 1;
+	visibility: visible;
+}
+.card3 .content3 h2{
+	color:#FFF;
+	text-transform: uppercase;
+	font-size: 2em;
+	line-height: 1em;
+	margin-bottom: 5px;
+}
+.card3 .content3 p{
+	color:#FFf;
+}
+.card3 .content3 a{
+	position:relative;
+	color:#fff;
+	padding: 10px 20px;
+	border-radius: 10px;
+	background:#FFf;
+	color:#111;
+	margin-top: 10px;
+	display: inline-block;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+
+
+.card4 img{
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	height: 240px;
+	pointer-events: none;
+	transition: 0.5s;
+}
+.card4:hover img{
+	left:72%;
+	height: 330px;
+}
+
+
+
+.card5 img{
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	height: 180px;
+	pointer-events: none;
+	transition: 0.5s;
+}
+.card5:hover img{
+	left:72%;
+	height: 200px;
+}
+
+
+.card6 img{
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	height: 240px;
+	pointer-events: none;
+	transition: 0.5s;
+}
+.card6:hover img{
+	left:72%;
+	height: 300px;
+}
+
+
+.card9 img{
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	height: 270px;
+	pointer-events: none;
+	transition: 0.5s;
+}
+.card9:hover img{
+	left:72%;
+	height: 270px;
+}
+
+.card8 img{
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	height: 375px;
+	pointer-events: none;
+	transition: 0.5s;
+}
+.card8:hover img{
+	left:72%;
+	height: 400px;
+}
+
+
+
+footer .contenedor{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding-bottom: 25px;
+}
+.copy{
+	font-size: 12px;
+	color:var(--verde);
+font-family: 'Poppins', sans-serif;
+}
+.sociales {
+	width: 100%;
+	text-align: center;
+	font-size: 20px;
+}
+.sociales a{
+	color:var(--verde);
+	text-decoration: none;
+}
+ a{
+	text-decoration: none;
+}
+
+.formulario {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+}
+
+.formulario__label {
+	display: block;
+	font-weight: 700;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.formulario__grupo-input {
+	position: relative;
+}
+
+.formulario__input {
+	width: 100%;
+	background: #fff;
+	border: 3px solid transparent;
+	border-radius: 3px;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 40px 0 10px;
+	transition: .3s ease all;
+}
+
+.formulario__input:focus {
+	border: 3px solid #0075FF;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+
+.formulario__input-error {
+	font-size: 12px;
+	margin-bottom: 0;
+	display: none;
+}
+
+.formulario__input-error-activo {
+	display: block;
+}
+
+.formulario__validacion-estado {
+	position: absolute;
+	right: 10px;
+	bottom: 15px;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+}
+
+.formulario__checkbox {
+	margin-right: 10px;
+}
+
+.formulario__grupo-terminos, 
+.formulario__mensaje,
+.formulario__grupo-btn-enviar {
+	grid-column: span 2;
+}
+
+.formulario__mensaje {
+	height: 45px;
+	line-height: 45px;
+	background: #F66060;
+	padding: 0 15px;
+	border-radius: 3px;
+	display: none;
+}
+
+.formulario__mensaje-activo {
+	display: block;
+}
+
+.formulario__mensaje p {
+	margin: 0;
+}
+
+.formulario__grupo-btn-enviar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.formulario__btn {
+	height: 45px;
+	line-height: 45px;
+	width: 30%;
+	background: #000;
+	color: #fff;
+	font-weight: bold;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: .1s ease all;
+}
+
+.formulario__btn:hover {
+	box-shadow: 3px 0px 30px rgba(163,163,163, 1);
+}
+
+.formulario__mensaje-exito {
+	font-size: 14px;
+	color: #119200;
+	display: none;
+}
+
+.formulario__mensaje-exito-activo {
+	display: block;
+}
+.formulario__grupo-correcto .formulario__validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+	color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+	border: 3px solid #bb2929;
+}
+
+@media screen and (max-width: 800px) {
+	.formulario {
+		grid-template-columns: 1fr;
+	}
+
+	.formulario__grupo-terminos, 
+	.formulario__mensaje,
+	.formulario__grupo-btn-enviar {
+		grid-column: 1;
+	}
+
+	.formulario__btn {
+		width: 100%;
+	}
+}
+
+

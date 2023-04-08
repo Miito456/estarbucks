@@ -1,0 +1,442 @@
+<!--Miguel Angel Ramos Soto No.Lista. 33-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Starbucks - Compra</title>
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="CSS/styles.css" />
+        <link rel="stylesheet" href="CSS/estiloticket.css" />
+        <script src="JS/store.js" async></script>
+        <link rel="icon" href="Img/logo.ico">
+        <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+    	<section>
+<!--Encabezado-->            
+        <header>
+            <a href="index.html" class="logo"><img src="Img/logo.png" alt="No se encontro la imagen"></a>
+            <div class="toggle" onclick="toggleMenu();"></div>
+            <ul class="navegador">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <script class="activo" crossorigin="anonymous"></script>
+                <li><a class="activo" href="compra.html"><i class="icono fas fa-shopping-cart"></i>Compra</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </header>
+        <section class="titulo">
+        <h2>No olvides registrarte antes de hacer tu compra!</h2>            
+        </section>
+<!--Bebidas -->
+        <section class="container content-section">
+            <h2 class="section-header">Bebidas</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Green Coffee®</span>
+                    <img class="shop-item-image" src="Img/img1.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$12.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">AÑADIR AL CARRITO</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Fresa Cream®</span>
+                    <img class="shop-item-image" src="Img/img2.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$14.99</span>
+                        <button class="btn btn-primary shop-item-button"type="button">AÑADIR AL CARRITO</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Frambuesa Coffee®</span>
+                    <img class="shop-item-image" src="Img/img3.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$9.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">AÑADIR AL CARRITO</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+<!--Alimentos -->
+        <section class="container content-section">
+            <h2 class="section-header">Alimentos</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Classic Cake®</span>
+                    <img class="shop-item-image" src="Img/extra2.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$5.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">AÑADIR AL CARRITO</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Classic Donut®</span>
+                    <img class="shop-item-image" src="Img/extra3.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$6.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">AÑADIR AL CARRITO</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Carrot Muffin® </span>
+                    <img class="shop-item-image" src="Img/extra4.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$8.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">AÑADIR AL CARRITO</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+<!--Extras -->
+        <section class="container content-section">   
+            <h2 class="section-header">Extras</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Natural Coffee®</span>
+                    <img class="shop-item-image" src="Img/extra5.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$12.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">AÑADIR AL CARRITO</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Custom Thermos®</span>
+                    <img class="shop-item-image" src="Img/extra6.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$20.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">AÑADIR AL CARRITO</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Starbucks Mug® </span>
+                    <img class="shop-item-image" src="Img/extra7.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$18.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">AÑADIR AL CARRITO</button>
+                    </div>
+                </div>
+            </div>
+        </section>  
+
+
+
+
+<!--Carrito -->        
+        <section class="container content-section">
+            <h2 class="section-header">CARRITO</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ARTICULO</span>
+                <span class="cart-price cart-header cart-column">PRECIO</span>
+                <span class="cart-quantity cart-header cart-column">CANTIDAD</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$0</span>
+            </div> 
+<!--Registro -->            
+        <h2>Registro</h2>
+        <main>
+           <form action="" class="formulario" id="formulario" name="form">
+            <br><hr><br>
+            <!-- Grupo: Nombre -->
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__label">Nombre</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Ingrese su nombre">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <br><p class="formulario__input-error">El nombre ingresado es invalido. Recuerde que solo se aceptan de 2 a 40 digitos y solo puede contener letras y espacio en blanco.</p>
+            </div><br>
+             <!-- Grupo: Correo Electronico -->
+            <div class="formulario__grupo" id="grupo__correo">
+                <label for="correo" class="formulario__label">Correo Electrónico</label>
+                <div class="formulario__grupo-input">
+                    <input type="email" class="formulario__input" name="correo" id="correo" placeholder="Ingrese su E-mail">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div><br>
+                <p class="formulario__input-error">El correo ingresado es invalido. Recuerda que solo puede contener letras, numeros, puntos y guion bajo.</p>
+            </div><br>
+
+            <!-- Grupo: Teléfono -->
+            <div class="formulario__grupo" id="grupo__telefono">
+                <label for="telefono" class="formulario__label">Teléfono</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="Ingrese su numero telefonico">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div><br>
+                <p class="formulario__input-error">El telefono ingresado es invalido. Recuerda que solo puede contener numeros y el maximo son 14 dígitos.</p>
+            </div><br>
+             <!-- Grupo: Edad -->
+            <div class="formulario__grupo" id="grupo__edad">
+                <label for="edad" class="formulario__label">Edad</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="edad" id="edad" placeholder="Ingrese su edad">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div><br>
+                <p class="formulario__input-error">La edad ingresada es invalida. Recuerda que solo se acepta numeros y una edad de 1 a 99 años. </p>
+            </div><br>
+             <!-- Grupo: Direccion -->
+            <div class="formulario__grupo" id="grupo__direccion">
+                <label for="direccion" class="formulario__label">Direccion</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="direccion" id="direccion" placeholder="Ingrese su dirección">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <br><p class="formulario__input-error">La dirección es invalida. Recuerda que solo se acepta de 10 a 40 digitos, solo letras, numeros y #.</p>
+            </div><br>
+            <div class="botones">
+            <input type="radio" name="tipo" id="tarjeta" value="Tarjeta de Credito"> Tarjeta de Credito <br>
+            <input type="radio" name="tipo" id="efectivo" value="Dinero en efectivo">Dinero en efectivo
+            </div>
+            <br><br>
+            <div class="formulario__mensaje" id="formulario__mensaje">
+                <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellene el formulario correctamente. </p>
+            </div>
+            <div class="formulario__grupo formulario__grupo-btn-enviar">
+                <button id="boton" type="button" class="btn btn-primary" onclick="document.getElementById('parrafo').innerHTML='mensajefinal';"> Registro </button><br>
+            <button id="boton2" type="button" class="btn btn-primary"> Limpiar </button><br>
+          <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+            </div>
+           </main>
+            <br><br><div id="mostrar">
+            <h2>Ticket de Compra</h2><br><hr><br>
+              <div class="my-5 page" size="A4">
+                    <div class="p-5">
+                        <section class="top-content bb d-flex justify-content-between">
+                            <div class="logo">
+                                <img src="Img/logo.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="top-left">
+                                <div class="graphic-path">
+                                    <p>Ticket</p>
+                                </div>
+                                <div class="position-relative">
+                                    <p>Pedido No. <span>0386</span></p>
+                                </div>
+                            </div>
+                        </section>
+            <section class="store-user mt-5">
+                <div class="col-10">
+                    <div class="row bb pb-3">
+                        <div class="col-7">
+                            <h2>Starbucks</h2>
+                            <p class="address"> 1500 Broadway, <br> New York 2213, <br>Vestavia Hills AL </p>
+                            <div class="txn mt-2">TXN: ch_1CvsAOLKc7BI7Xua</div>
+                        </div>
+                        <div class="col-5">  
+                            <h2>Datos de compra</h2>
+                        </div>
+                        <p id="parrafo"></p>
+                    </div></div> <br><br> 
+                     <div class="centrar">
+                    <div class="barras">
+                    <img src="Img/barras.png" alt="No se encontro la imagen" width="175" height="100" align="center">
+                </div><br>
+                <p> StarbucksCompany® le agradece su preferencia. </p>
+                  <br><br><br>
+                    <footer class="ticket">
+                <hr>
+                <p class="m-0 text-center">
+                    StarbucksCompany® - <a href="https://www.starbucks.com"> https://www.starbucks.com </a>
+                </p>
+                <div class="social pt-3">
+                    <span class="pr-2">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>/0123456789/</span>
+                    </span>
+                    <span class="pr-2">
+                        <i class="fas fa-envelope"></i>
+                        <span>/Starbucks@Company.com/</span>
+                    </span>
+                    <span class="pr-2">
+                        <i class="fab fa-facebook-f"></i>
+                        <span>/Starbucks/</span>
+                    </span>
+                    <span class="pr-2">
+                        <i class="fab fa-youtube"></i>
+                        <span>/Starbucks</span>
+                    </span>
+                </div></div>
+            </footer>
+            <script >
+                const formulario = document.getElementById('formulario');
+                const inputs = document.querySelectorAll('#formulario input');
+                const expresiones = {
+                    direccion: /^[a-zA-ZÀ-ÿ\s\_\d\#]{2,40}$/, // Letras, numeros, guion y guion_bajo
+                    nombre: /^[a-zA-ZÀ-ÿ\s]{2,40}$/, // Letras y espacios, pueden llevar acentos.
+                    correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+                    telefono: /^\d{7,14}$/, // 7 a 14 numeros.
+                    edad: /^\d{1,2}$/
+                }
+                const campos = {
+                    direccion: false,
+                    nombre: false,
+                    correo: false,
+                    edad: false,
+                    telefono: false
+                }
+                const validarFormulario = (e) => {
+                    switch (e.target.name) {
+                        case "direccion":
+                            validarCampo(expresiones.direccion, e.target, 'direccion');
+                        break;
+                        case "nombre":
+                            validarCampo(expresiones.nombre, e.target, 'nombre');
+                        break;
+                        case "correo":
+                            validarCampo(expresiones.correo, e.target, 'correo');
+                        break;
+                        case "telefono":
+                            validarCampo(expresiones.telefono, e.target, 'telefono');
+                        break;
+                        case "edad":
+                            validarCampo(expresiones.edad, e.target, 'edad');
+                        break;
+                    }
+                }
+                const validarCampo = (expresion, input, campo) => {
+                    if(expresion.test(input.value)){
+                        document.getElementById(`grupo__${campo}`).classList.remove('formulario__grupo-incorrecto');
+                        document.getElementById(`grupo__${campo}`).classList.add('formulario__grupo-correcto');
+                        document.querySelector(`#grupo__${campo} i`).classList.add('fa-check-circle');
+                       document.querySelector(`#grupo__${campo} i`).classList.remove('fa-times-circle');
+                        document.querySelector(`#grupo__${campo} .formulario__input-error`).classList.remove('formulario__input-error-activo');
+                        campos[campo] = true;
+                    } else {
+                        document.getElementById(`grupo__${campo}`).classList.add('formulario__grupo-incorrecto');
+                        document.getElementById(`grupo__${campo}`).classList.remove('formulario__grupo-correcto');
+                         document.querySelector(`#grupo__${campo} i`).classList.add('fa-times-circle');
+                        document.querySelector(`#grupo__${campo} i`).classList.remove('fa-check-circle');
+                        document.querySelector(`#grupo__${campo} .formulario__input-error`).classList.add('formulario__input-error-activo');
+                        campos[campo] = false;
+                    }
+                }
+                inputs.forEach((input) => {
+                    input.addEventListener('keyup', validarFormulario);
+                    input.addEventListener('blur', validarFormulario);
+                });
+                var btn=document.getElementById("boton");
+                var btn2=document.getElementById("boton2");
+                btn.addEventListener("click",function(){
+                var nom=document.getElementById('nombre').value;
+                var edad=document.getElementById('edad').value;
+                var direccion=document.getElementById('direccion').value;
+                var num=document.getElementById('telefono').value;
+                var email=document.getElementById('correo').value;
+                var total = 0;
+                var cartItemContainer = document.getElementsByClassName('cart-items')[0];
+                var cartRows = cartItemContainer.getElementsByClassName('cart-row');
+                for (var i = 0; i < cartRows.length; i++) {
+                        var cartRow = cartRows[i]
+                        var priceElement = cartRow.getElementsByClassName('cart-price')[0]
+                        var quantityElement = cartRow.getElementsByClassName('cart-quantity-input')[0]
+                        var price = parseFloat(priceElement.innerText.replace('$', ''))
+                        var quantity = quantityElement.value
+                        total = total + (price * quantity)
+                    };
+                    total = Math.round(total * 100) / 100;
+                    document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total;
+                    let mensajefinal='';
+                    let tipopago='';
+                    var desc=total*0.15;
+                    var totaldesc=total-desc;
+                    let tipotarjeta=document.getElementById("tarjeta");
+                    let tipoefectivo=document.getElementById("efectivo");
+                    if (tipotarjeta.checked) {
+                        tipopago= tipotarjeta.value;
+                        document.getElementById('mostrar').style.display='block';
+                        alert("Muchas gracias por registrarte "+nom+" ahora se generara su ticket");
+                    mensajefinal="Cliente: "+nom+" <br> De "+edad+" años de edad, <br>"+direccion+". "+
+                       "<br> Correo electronico: "+email+" <br> Numero telefonico: "+num+" <br><br> Su metodo de pago es con: "+tipopago+
+                      "<br> <br> <br> Usted iba a pagar un total de: "+total+" dollares. <br> Pero como usted pago con tarjeta de credito usted tendra un descuento del 15% que corresponde a: "+desc+" dollares. <br> Asi pagando un total de: "+totaldesc+" dollares.";
+                    document.getElementById("parrafo").innerHTML=mensajefinal;
+                    }else if (tipoefectivo.checked) {
+                        tipopago=tipoefectivo.value;
+                         alert("Muchas gracias por registrarte "+nom+" ahora se generara su ticket");
+                    mensajefinal="Cliente: "+nom+" <br> De "+edad+" años de edad, <br>"+direccion+". "+
+                       "<br> Correo electronico: "+email+" <br> Numero telefonico: "+num+" <br><br> Su metodo de pago es con: "+tipopago+
+                      "<br> <br> <br> Usted va a pagar un total de: "+total+" dollares.";
+                    document.getElementById("parrafo").innerHTML=mensajefinal;
+                    document.getElementById('mostrar').style.display='block';
+                    }else{
+                        alert("Seleccione el metodo de pago.");
+                    }
+                });
+             btn2.addEventListener("click",function(){
+                document.getElementById("nombre").value="";
+                document.getElementById("correo").value="";
+                document.getElementById("direccion").value="";
+                document.getElementById("telefono").value="";
+                document.getElementById("edad").value="";
+             });
+                formulario.addEventListener('submit', (e) => {
+                                e.preventDefault();
+                                if(campos.direccion && campos.nombre && campos.correo && campos.telefono && campos.edad ){
+                                    formulario.reset();
+                                    document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
+                                    location.reload();
+                                    alert('COMPRA CONFIRMADA \nGracias por confirmar su compra.\nSu pedido esta listo para recoger.\nRecuerde presentar el ticket al recoger su compra. \nStarbucksCompany® agradece su preferencia.\nVuelva pronto.')
+                                    var cartItems = document.getElementsByClassName('cart-items')[0]
+                                    while (cartItems.hasChildNodes()) {
+                                        cartItems.removeChild(cartItems.firstChild)
+                                    }
+                                    updateCartTotal()
+                                
+                                    setTimeout(() => {
+                                        document.getElementById('formulario__mensaje-exito').classList.remove('formulario__mensaje-exito-activo');
+                                    }, 5000);
+
+                                    document.querySelectorAll('.formulario__grupo-correcto').forEach((icono) => {
+                                        icono.classList.remove('formulario__grupo-correcto');
+                                    });
+                                    setTimeout(() => {
+                                        document.getElementById('.formulario__grupo-correcto').classList.remove('formulario__grupo-correcto');
+                                    }, 50);
+                                } else {
+                                    document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
+                                    alert("NO SE HA CONFIRMADO SU COMPRA \n\nParece que no ha rellenado correctamente alguno de los campos de registo, verifique los datos ingresados. \n\nRecuerde que para que su compra sea recibida en las intalaciones de StarbucksCompany® debe de hacer un registro exitoso, de lo contrario no recibira su pedido.");
+                                }
+                            });
+            </script><br>
+            <button class="btn btn-primary btn-purchase" type="submit" >CONFIRMAR COMPRA</button>
+        </section>
+        </section>
+    </form>
+        <br><br><hr><br><br>
+<!--Footer-->
+        <footer>
+            <div class="contenedor">
+                <p class="copy">
+                    Fecha de creación: 30 de abril del 2021.
+                    <br>
+                    Ultima actualización: 11 de junio del 2021.
+                    <br><br>
+                    Los productos (Incluya logos) mostrados en esta página son propiedad de sus respectivos representantes y no los son de ninguna manera propiedad de los creadores de esta pagina web. <br>   El único motivo de esta página es el de mostrar información sobre los diferentes productos que ofrece la empresa Starbucks®. <br>   Si necesitas conocer más sobre las leyes de autor y la manera en la que se definen sobre este contenido puedes visitar la página de derechos de autor de  <a href="https://www.starbucks.com.co/about-us/company-information/online-policies/terms-of-use">Starbucks®.</a><br> Si quieres saber más sobre el tema de derechos de autor  haz click <a href="https://www.wipo.int/copyright/es/">aquí.</a><br>     
+                    Si desea contactar con los creadores de esta página puede encontrar la información de contacto en la sección "Contacto" o bien dando click <a href="contacto.html">aquí</a>.
+                    <br>   <br>    
+                    Miguel Angel Ramos Soto - Mito5524@gmail.com <a href="https://www.facebook.com/profile.php?id=100006413612910" _blank>Facebook</a>
+                    <br><br>
+                    <b>Derechos de autor: </b> La tienda de Starbucks®, está protegida por los derechos de autor, arreglos secretos u otros métodos para la protección de la propiedad intelectual.<br> 
+                    <b> Marcas registradas: </b>  Starbucks es una marca registrada de Starbucks. Inc.® <br>    
+                        <b> Patentes:</b> Starbucks Tiene patentes que aplica a su servicio. Para información sobre las patentes de Starbucks® haz click <a href="https://www.starbucks.com.mx/about-us/company-information/online-policies/terms-of-use">aquí</a>.
+                        <br>    
+                        Si quieres conocer más de la plataforma Starbucks® puedes seguirlos en sus redes sociales, solo basta con darle click al baner de la red social que sea de tu agrado.
+                </p>
+            <div class="sociales">
+                    <a href="https://www.facebook.com/Starbucks"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/starbucks?lang=es"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/starbucks/?hl=es-la"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
+
